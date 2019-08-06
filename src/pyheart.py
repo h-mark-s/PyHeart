@@ -1,9 +1,10 @@
 import requests
 import logging
 
-def heartbeat(server):
+def heartbeat(url):
     logging.basicConfig(filename='heartbeat.log', filemode='a', format='%(asctime)s - %(message)s')
-    ping = requests.get(server, timeout=5)
+    endpoint = '{}/heartbeat'.format(url) 
+    ping = requests.get(endpoint, timeout=5)
     if ping.status_code == 200:
         logging.error('INFO: Server is up and running')
     else:
