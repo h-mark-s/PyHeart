@@ -10,7 +10,7 @@ setuptools.setup(
         description='A simple heartbeat package for Python 3',
         long_description=long_description,
     long_description_content_type='text/markdown',
-        url='https://github.com/h-mark-s/pyheart/pyheart'
+        url='https://github.com/h-mark-s/pyheart/pyheart',
         packages=setuptools.find_packages(),
         classifiers=[
             'Programming Language:: Python :: 3',
